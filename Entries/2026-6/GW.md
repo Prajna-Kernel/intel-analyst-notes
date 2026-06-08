@@ -2,10 +2,10 @@
 
 ---
 
-## Entry 001 — Kimsuky HTTPSpy
+# Entry 001 — Kimsuky HTTPSpy
 
-**Ref:** [Global-Watch June 2026]
 **Date:** 2026-06-05
+**Folder:** Global-Watch
 
 ### Strategic Implication
 
@@ -22,3 +22,26 @@ India operates similar GPKI-equivalent infrastructure — certificate-based auth
 ---
 
 **[Read Full Entry in Global-Watch](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/JUNE-2026-LOG.md#incident-001)**
+
+---
+
+# Entry 002 — VerdantBamboo BRICKSTORM
+
+**Date:** 2026-06-09
+**Folder:** Global-Watch
+
+### Strategic Implication
+
+VerdantBamboo's 18-month dwell time isn't just an operational success — it's an indictment of how organizations monitor their networks. The security teams either weren't looking or weren't equipped to see what was happening. The MSP entry point compounds this — by compromising a managed service provider, VerdantBamboo didn't need to breach each target individually, one foothold cascaded into multiple networks. The pivot to NAS devices via BRICKSTORM BSD variant is deliberate — storage systems are under-monitored compared to endpoints, rarely patched on schedule, and hold more consolidated data than any single laptop or server. Eighteen months on a NAS is eighteen months of unrestricted access to everything an organization has ever saved.
+
+### India Relevance
+
+India's MSP sector is one of the largest in the world — TCS, Infosys, Wipro and dozens of smaller firms manage IT infrastructure for thousands of clients globally, including government-adjacent and defence-linked organizations. VerdantBamboo's playbook — MSP entry, long dwell, storage targeting — is directly replicable against Indian providers. A breach here doesn't stay in India. It cascades into every client network that Indian MSP touches, potentially including foreign government and critical infrastructure contracts. The security maturity gap across smaller Indian MSPs makes this more likely, not less. One compromised provider is a quiet entry point into hundreds of organizations simultaneously.
+
+### Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 025](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-003)**
