@@ -4,7 +4,7 @@
 
 # Entry 001 — Kimsuky HTTPSpy
 
-**Date:** 2026-06-05
+**Date:** 2026-06-05   
 **Folder:** Global-Watch
 
 ### Strategic Implication
@@ -27,7 +27,7 @@ India operates similar GPKI-equivalent infrastructure — certificate-based auth
 
 # Entry 002 — VerdantBamboo BRICKSTORM
 
-**Date:** 2026-06-09
+**Date:** 2026-06-09   
 **Folder:** Global-Watch
 
 ## Strategic Implication
@@ -44,13 +44,13 @@ India's MSP sector is one of the largest in the world — TCS, Infosys, Wipro an
 
 ---
 
-**[Global-Watch → June 2026 → Entry 025](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-003)**
+**[Global-Watch → June 2026 → Entry 003](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-003)**
 
 ---
 
 # Entry 003 — Miasma Mini Shai-Hulud
 
-**Date:** 2026-06-09
+**Date:** 2026-06-09   
 **Folder:** Global-Watch
 
 ## Strategic Implication
@@ -67,4 +67,27 @@ India has one of the largest developer ecosystems in the world — millions of d
 
 ---
 
-**[Global-Watch → June 2026 → Entry 026](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-004)**
+**[Global-Watch → June 2026 → Entry 004](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-004)**
+
+---
+
+## Entry 004 — ShinyHunters Oracle PeopleSoft Zero-Day
+
+**Date:** 2026-06-09   
+**Folder:** Global-Watch
+
+### Strategic Implication
+
+PeopleSoft is widely deployed across higher education for student records, HR, and financial systems — and universities are structurally softer targets than corporations or government agencies. Security maturity is lower, and the user base (students, faculty) is larger and less security-trained, making both technical and social attack surfaces wider. The zero-day nature of CVE-2026-35273 amplifies this dramatically: a zero-day isn't useful against one target, it's useful because it can be fired at every organization running the same vulnerable software simultaneously, before any patch exists. ShinyHunters' 13-day window before detection meant 100+ universities were compromised in parallel — a scale of breach that's only possible when the vulnerability itself is unknown to the vendor. The University of Nottingham's 455K exposed records is a single data point in what was likely a much larger harvest.
+
+### India Relevance
+
+India's higher education sector runs on similar enterprise systems — IITs, central and state universities use platforms like Oracle PeopleSoft for student and administrative records. A comparable zero-day here wouldn't just mean stolen data, it would mean stolen identities at scale — usable for fraud, impersonation, and follow-on social engineering against students and their families. The faculty angle is arguably more serious: professors and researchers at Indian universities often work on sensitive technical fields, and their records — affiliations, projects, contacts — give attackers a map of India's research and technical ecosystem. A breach like this isn't just a privacy incident, it's reconnaissance handed to an adversary on a plate.
+
+### Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 006](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-006)**
