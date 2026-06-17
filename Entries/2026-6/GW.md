@@ -91,3 +91,49 @@ India's higher education sector runs on similar enterprise systems — IITs, cen
 ---
 
 **[Global-Watch → June 2026 → Entry 006](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-006)**
+
+---
+
+# Entry 005 — Palo Alto GlobalProtect Auth Bypass
+
+**Date:** 2026-06-09
+**Folder:** Global-Watch
+
+## Strategic Implication
+
+GlobalProtect is an enterprise VPN — the gateway organizations use to let remote employees access internal networks securely. An authentication bypass here doesn't just grant access, it grants *trusted* access — every downstream security control, firewalls, monitoring systems, access policies, treats the attacker as a legitimate authenticated user because the breach point sits before all of them. CISA's KEV listing confirms this isn't theoretical; real attackers are exploiting it now. Once past the login, the attacker reaches whatever the VPN was protecting: internal files, communications, infrastructure access, the entire internal network surface that remote work depends on. A VPN auth bypass is a skeleton key, not a single stolen lock.
+
+## India Relevance
+
+India's IT sector and government departments increasingly run on remote and hybrid work models, many relying on enterprise VPN solutions like Palo Alto GlobalProtect for secure remote access. If this auth bypass is being actively exploited globally, any Indian organization running unpatched GlobalProtect — IT companies, government bodies, defence-adjacent contractors — faces the same exposure as international victims: full internal network access for an attacker who never had to authenticate. Given India's growing role as a global IT services hub, a compromised Indian VPN gateway doesn't just expose domestic data, it can expose client networks from other countries that route through Indian-managed infrastructure.
+
+## Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 011](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-011)**
+
+---
+
+# Entry 006 — Microsoft Copilot SearchLeak
+
+**Date:** 2026-06-09
+**Folder:** Global-Watch
+
+## Strategic Implication
+
+SearchLeak inverts the usual phishing model. Traditional phishing requires the victim to actively hand over credentials — type a password into a fake page. This exploit needs only one click, because Copilot is already authenticated and already has standing access to the user's emails, documents, and Teams data as part of its normal function. The attacker isn't stealing access, they're hijacking access that already exists. This exposes a structural risk in giving AI assistants broad, persistent access to personal and organizational data: the assistant becomes a single point of failure, where one trigger event is enough to exfiltrate everything it's connected to, with no second credential barrier in between.
+
+## India Relevance
+
+Microsoft Copilot is being adopted rapidly across Indian enterprises, banks, and government departments as part of the broader Microsoft 365 rollout. A single click by a government employee, bank executive, or corporate decision-maker could trigger Copilot into leaking everything it has standing access to — confidential files, internal communications, organizational structure, and strategic plans. For government and defence-adjacent bodies, this isn't just a data breach, it's exposure of internal decision-making and personnel networks that can be directly weaponized against the organization. As AI assistants become more embedded in Indian institutional workflows, this kind of exploit becomes a high-value, low-effort attack vector against exactly the targets that matter most.
+
+## Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 012](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-012)**
