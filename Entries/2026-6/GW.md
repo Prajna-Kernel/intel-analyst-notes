@@ -96,7 +96,7 @@ India's higher education sector runs on similar enterprise systems — IITs, cen
 
 # Entry 005 — Palo Alto GlobalProtect Auth Bypass
 
-**Date:** 2026-06-09
+**Date:** 2026-06-09   
 **Folder:** Global-Watch
 
 ## Strategic Implication
@@ -119,7 +119,7 @@ India's IT sector and government departments increasingly run on remote and hybr
 
 # Entry 006 — Microsoft Copilot SearchLeak
 
-**Date:** 2026-06-09
+**Date:** 2026-06-09   
 **Folder:** Global-Watch
 
 ## Strategic Implication
@@ -137,3 +137,50 @@ Microsoft Copilot is being adopted rapidly across Indian enterprises, banks, and
 ---
 
 **[Global-Watch → June 2026 → Entry 012](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-012)**
+
+---
+
+# Entry 007 — ShapedPlugin Supply Chain Compromise
+
+**Date:** 2026-06-09   
+**Folder:** Global-Watch
+
+# Strategic Implication
+
+ShapedPlugin's compromise isn't a website hack — it's a supply chain attack. The attacker didn't target individual WordPress sites, they targeted the plugin itself, meaning every site running that plugin became a victim automatically upon update or installation. WordPress powers roughly 40% of the internet, and plugins are the mechanism through which most of that ecosystem extends functionality — compromising a plugin developer is a force multiplier that no individual site-by-site attack can match. CVE-2026-49777 scoring CVSS 10.0 means full severity, no authentication required. The target is wp-config.php — a single file containing database credentials, secret keys, and everything needed to take complete control of a site. One supply chain breach, thousands of config files extracted, thousands of sites fully owned.
+
+## India Relevance
+
+India has a large WordPress footprint — news outlets, e-commerce platforms, government information portals, and NGOs all rely on it. A supply chain compromise hitting Indian WordPress deployments means wp-config extraction across all of them simultaneously. Government portals are the most sensitive target — citizen registration data, phone numbers, emails, addresses, everything collected through digital India initiatives sits in those databases. NGOs add a financial dimension: donation records, bank account details, and payment information are stored and accessible once database credentials are in attacker hands. This isn't one breach — it's a quiet, automated extraction across every affected Indian site running the compromised plugin, most of whom won't know until the damage is done.
+
+## Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 013](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-013)**
+
+---
+
+# Entry 008 — Gravity SMTP Unauthenticated Information Disclosure
+
+**Date:** 2026-06-09   
+**Folder:** Global-Watch
+
+## Strategic Implication
+
+Gravity SMTP's flaw requires no authentication — anyone can trigger the information disclosure without any credentials or prior access. With 17 million exploitation attempts already recorded, this wasn't a quiet discovery, it was an immediate mass exploitation event. The prize is SMTP credentials — the login details a WordPress site uses to send outbound email. Stolen SMTP credentials don't just give read access to emails, they give the attacker a legitimate sending identity. Phishing campaigns launched through a real organization's email system bypass spam filters, carry trusted domain reputation, and are significantly harder for recipients to identify as malicious. At the scale this was exploited, the attacker pool now holds legitimate sending identities for potentially thousands of organizations globally.
+
+## India Relevance
+
+India's digital ecosystem runs heavily on OTP and email verification — banking, UPI transactions, government service logins, e-commerce, almost every authentication flow depends on it. Gravity SMTP credential theft from Indian WordPress sites hands attackers legitimate sending identities from trusted Indian domains. Phishing emails sent through these compromised accounts bypass spam filters and carry real domain reputation, making them far more convincing than typical fraud attempts. The OTP angle is the most dangerous: if an attacker controls the email channel and social engineers a victim into redirecting an OTP to a compromised address, every security layer built on top of that OTP — bank accounts, Aadhaar-linked services, UPI — becomes accessible. India's authentication infrastructure assumes the email sender is trustworthy. This exploit breaks that assumption at scale.
+
+## Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 014](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-014)**
+
