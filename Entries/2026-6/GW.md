@@ -184,3 +184,27 @@ India's digital ecosystem runs heavily on OTP and email verification — banking
 
 **[Global-Watch → June 2026 → Entry 014](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-014)**
 
+---
+
+# Entry 009 — PTC Windchill Unauthenticated RCE
+
+**Date:** 2026-06-09   
+**Folder:** Global-Watch
+
+## Strategic Implication
+
+PTC Windchill is where defence contractors and aerospace manufacturers store their most sensitive technical data — engineering blueprints, product specifications, design files for weapons systems and aircraft. An unauthenticated RCE at CVSS 9.3 means no credentials required to execute code on the server, and the JSP web shell deployment means this isn't a smash-and-grab — it's persistent, quiet access over time. CL-STA-1062's targeting of manufacturing, aerospace, and defence isn't opportunistic, it's deliberate intellectual property extraction. A bank breach yields financial data. A Windchill breach yields the technical blueprints of a country's defence capability. CISA's June 28 KEV deadline signals active exploitation — the window for unpatched systems is already closing.
+
+## India Relevance
+
+India's defence manufacturing sector is expanding rapidly — HAL, DRDO, BEL, and private contractors under Make in India all manage sensitive engineering data through PLM platforms. If Windchill is deployed across Indian defence and aerospace supply chains, an unpatched CVE-2026-12569 instance is an open door into that data. The exposure isn't just technical blueprints — it's procurement details, pricing, quantities, supplier networks, and the design specifications of systems India hasn't publicly disclosed yet. For an adversary, that's a complete picture of India's defence development pipeline without firing a shot. CISA's June 28 deadline applies to US federal agencies, but Indian organizations running Windchill have no equivalent forcing function — patch timelines are self-governed, which historically means slower.
+
+## Pattern Tracking
+
+*To be completed — pending review of Global-Watch log.*
+
+---
+
+**[Global-Watch → June 2026 → Entry 015](https://github.com/Prajna-Kernel/cyber-linguist-intel/blob/main/Threat_Intel_Log/Global-Watch/2026-06.md#incident-015)**
+
+---
